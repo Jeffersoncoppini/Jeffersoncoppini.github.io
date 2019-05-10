@@ -895,9 +895,9 @@ ApplicationMain.create = function(config) {
 	ManifestResources.init(config);
 	var _this = app.meta;
 	if(__map_reserved["build"] != null) {
-		_this.setReserved("build","4");
+		_this.setReserved("build","6");
 	} else {
-		_this.h["build"] = "4";
+		_this.h["build"] = "6";
 	}
 	var _this1 = app.meta;
 	if(__map_reserved["company"] != null) {
@@ -5208,87 +5208,87 @@ $hxClasses["CreditsState"] = CreditsState;
 CreditsState.__name__ = ["CreditsState"];
 CreditsState.__super__ = flixel_FlxState;
 CreditsState.prototype = $extend(flixel_FlxState.prototype,{
-	_texto: null
-	,_texto2: null
-	,_texto3: null
-	,_texto4: null
-	,_texto5: null
-	,_texto6: null
-	,_texto7: null
-	,_texto8: null
+	_text: null
+	,_text2: null
+	,_text3: null
+	,_text4: null
+	,_text5: null
+	,_text6: null
+	,_text7: null
+	,_text8: null
 	,_btnBack: null
 	,create: function() {
-		this._texto = new flixel_text_FlxText(0,0,0,"CREDITS:",12);
-		this._texto.set_x(flixel_FlxG.width / 2 - this._texto.get_width() / 2);
-		this._texto.set_y(flixel_FlxG.height);
-		this._texto.set_moves(true);
-		this._texto.velocity.set_y(-15);
-		this._texto.set_color(-1);
-		this._texto.set_antialiasing(true);
-		this._texto2 = new flixel_text_FlxText(0,0,0,"[Development]",10);
-		this._texto2.set_x(flixel_FlxG.width / 2 - this._texto2.get_width() / 2);
-		this._texto2.set_y(this._texto.y + this._texto.get_height() + 5);
-		this._texto2.set_moves(true);
-		this._texto2.velocity.set_y(-15);
-		this._texto2.set_color(-15790081);
-		this._texto2.set_antialiasing(true);
-		this._texto3 = new flixel_text_FlxText(0,0,0,"Jefferson Alexandre Coppini",8);
-		this._texto3.set_x(flixel_FlxG.width / 2 - this._texto3.get_width() / 2);
-		this._texto3.set_y(this._texto.y + this._texto.get_height() + 5 + this._texto2.get_height());
-		this._texto3.set_moves(true);
-		this._texto3.velocity.set_y(-15);
-		this._texto3.set_color(-1);
-		this._texto3.set_antialiasing(true);
-		this._texto4 = new flixel_text_FlxText(0,0,0,"[Art]",10);
-		this._texto4.set_x(flixel_FlxG.width / 2 - this._texto4.get_width() / 2);
-		this._texto4.set_y(this._texto.y + this._texto.get_height() + 20 + this._texto2.get_height() + this._texto3.get_height());
-		this._texto4.set_moves(true);
-		this._texto4.velocity.set_y(-15);
-		this._texto4.set_color(-15790081);
-		this._texto4.set_antialiasing(true);
-		this._texto5 = new flixel_text_FlxText(0,0,0,"tilemap grass dungeon floors snow water.\nBy: gfx0 (OpenGameArt.org) ",8);
-		this._texto5.set_x(flixel_FlxG.width / 2 - this._texto5.get_width() / 2);
-		this._texto5.set_y(this._texto.y + this._texto.get_height() + 20 + this._texto2.get_height() + this._texto3.get_height() + this._texto4.get_height());
-		this._texto5.set_moves(true);
-		this._texto5.velocity.set_y(-15);
-		this._texto5.set_color(-1);
-		this._texto5.set_antialiasing(true);
-		this._texto5.set_alignment("center");
-		this._texto6 = new flixel_text_FlxText(0,0,0,"Ninja NPC Sprite Sheet. \nBy: josepharaoh99 (OpenGameArt.org) ",8);
-		this._texto6.set_x(flixel_FlxG.width / 2 - this._texto6.get_width() / 2);
-		this._texto6.set_y(10 + this._texto.y + this._texto.get_height() + 20 + this._texto2.get_height() + this._texto3.get_height() + this._texto4.get_height() + this._texto5.get_height());
-		this._texto6.set_moves(true);
-		this._texto6.velocity.set_y(-15);
-		this._texto6.set_color(-1);
-		this._texto6.set_antialiasing(true);
-		this._texto6.set_alignment("center");
-		this._texto7 = new flixel_text_FlxText(0,0,0,"Pointy Numbers. \nBy: notme (OpenGameArt.org) ",8);
-		this._texto7.set_x(flixel_FlxG.width / 2 - this._texto7.get_width() / 2);
-		this._texto7.set_y(20 + this._texto.y + this._texto.get_height() + 20 + this._texto2.get_height() + this._texto3.get_height() + this._texto4.get_height() + this._texto5.get_height() + this._texto6.get_height());
-		this._texto7.set_moves(true);
-		this._texto7.velocity.set_y(-15);
-		this._texto7.set_color(-1);
-		this._texto7.set_antialiasing(true);
-		this._texto7.set_alignment("center");
-		this._texto8 = new flixel_text_FlxText(0,0,0,"Blue life heart. By: \nsauer2 (OpenGameArt.org) ",8);
-		this._texto8.set_x(flixel_FlxG.width / 2 - this._texto8.get_width() / 2);
-		this._texto8.set_y(30 + this._texto.y + this._texto.get_height() + 20 + this._texto2.get_height() + this._texto3.get_height() + this._texto4.get_height() + this._texto5.get_height() + this._texto6.get_height() + this._texto7.get_height());
-		this._texto8.set_moves(true);
-		this._texto8.velocity.set_y(-15);
-		this._texto8.set_color(-1);
-		this._texto8.set_antialiasing(true);
-		this._texto8.set_alignment("center");
-		this._btnBack = new flixel_ui_FlxButton(0,0,"Back",$bind(this,this.goBack));
+		this._text = new flixel_text_FlxText(0,0,0,"CREDITS",12);
+		this._text.set_x(flixel_FlxG.width / 2 - this._text.get_width() / 2);
+		this._text.set_y(flixel_FlxG.height);
+		this._text.set_moves(true);
+		this._text.velocity.set_y(-15);
+		this._text.set_color(-1);
+		this._text.set_antialiasing(true);
+		this._text2 = new flixel_text_FlxText(0,0,0,"[Development]",10);
+		this._text2.set_x(flixel_FlxG.width / 2 - this._text2.get_width() / 2);
+		this._text2.set_y(this._text.y + this._text.get_height() + 5);
+		this._text2.set_moves(true);
+		this._text2.velocity.set_y(-15);
+		this._text2.set_color(-15790081);
+		this._text2.set_antialiasing(true);
+		this._text3 = new flixel_text_FlxText(0,0,0,"Jefferson Alexandre Coppini",8);
+		this._text3.set_x(flixel_FlxG.width / 2 - this._text3.get_width() / 2);
+		this._text3.set_y(this._text2.y + this._text2.get_height() + 10);
+		this._text3.set_moves(true);
+		this._text3.velocity.set_y(-15);
+		this._text3.set_color(-1);
+		this._text3.set_antialiasing(true);
+		this._text4 = new flixel_text_FlxText(0,0,0,"[Art]",10);
+		this._text4.set_x(flixel_FlxG.width / 2 - this._text4.get_width() / 2);
+		this._text4.set_y(this._text3.y + this._text3.get_height() + 20);
+		this._text4.set_moves(true);
+		this._text4.velocity.set_y(-15);
+		this._text4.set_color(-15790081);
+		this._text4.set_antialiasing(true);
+		this._text5 = new flixel_text_FlxText(0,0,0,"tilemap grass dungeon floors snow water.\nBy: gfx0 (OpenGameArt.org) ",8);
+		this._text5.set_x(flixel_FlxG.width / 2 - this._text5.get_width() / 2);
+		this._text5.set_y(this._text4.y + this._text4.get_height() + 10);
+		this._text5.set_moves(true);
+		this._text5.velocity.set_y(-15);
+		this._text5.set_color(-1);
+		this._text5.set_antialiasing(true);
+		this._text5.set_alignment("center");
+		this._text6 = new flixel_text_FlxText(0,0,0,"Ninja NPC Sprite Sheet. \nBy: josepharaoh99 (OpenGameArt.org) ",8);
+		this._text6.set_x(flixel_FlxG.width / 2 - this._text6.get_width() / 2);
+		this._text6.set_y(this._text5.y + this._text5.get_height() + 20);
+		this._text6.set_moves(true);
+		this._text6.velocity.set_y(-15);
+		this._text6.set_color(-1);
+		this._text6.set_antialiasing(true);
+		this._text6.set_alignment("center");
+		this._text7 = new flixel_text_FlxText(0,0,0,"Pointy Numbers. \nBy: notme (OpenGameArt.org) ",8);
+		this._text7.set_x(flixel_FlxG.width / 2 - this._text7.get_width() / 2);
+		this._text7.set_y(this._text6.y + this._text6.get_height() + 20);
+		this._text7.set_moves(true);
+		this._text7.velocity.set_y(-15);
+		this._text7.set_color(-1);
+		this._text7.set_antialiasing(true);
+		this._text7.set_alignment("center");
+		this._text8 = new flixel_text_FlxText(0,0,0,"Blue life heart. By: \nsauer2 (OpenGameArt.org) ",8);
+		this._text8.set_x(flixel_FlxG.width / 2 - this._text8.get_width() / 2);
+		this._text8.set_y(this._text7.y + this._text7.get_height() + 20);
+		this._text8.set_moves(true);
+		this._text8.velocity.set_y(-15);
+		this._text8.set_color(-1);
+		this._text8.set_antialiasing(true);
+		this._text8.set_alignment("center");
+		this._btnBack = new flixel_ui_FlxButton(0,0,"Menu",$bind(this,this.goBack));
 		this._btnBack.set_x(flixel_FlxG.width - 90);
 		this._btnBack.set_y(flixel_FlxG.height - 30);
-		this.add(this._texto);
-		this.add(this._texto2);
-		this.add(this._texto3);
-		this.add(this._texto4);
-		this.add(this._texto5);
-		this.add(this._texto6);
-		this.add(this._texto7);
-		this.add(this._texto8);
+		this.add(this._text);
+		this.add(this._text2);
+		this.add(this._text3);
+		this.add(this._text4);
+		this.add(this._text5);
+		this.add(this._text6);
+		this.add(this._text7);
+		this.add(this._text8);
 		this.add(this._btnBack);
 		flixel_FlxState.prototype.create.call(this);
 	}
@@ -5392,6 +5392,44 @@ EReg.prototype = {
 	}
 	,__class__: EReg
 };
+var GameOverState = function(MaxSize) {
+	flixel_FlxState.call(this,MaxSize);
+};
+$hxClasses["GameOverState"] = GameOverState;
+GameOverState.__name__ = ["GameOverState"];
+GameOverState.__super__ = flixel_FlxState;
+GameOverState.prototype = $extend(flixel_FlxState.prototype,{
+	_score: null
+	,_title: null
+	,_sc: null
+	,_btnMenu: null
+	,create: function() {
+		this._title = new flixel_text_FlxText(0,0,0,"Game Over! ",20);
+		this._title.set_x(flixel_FlxG.width / 2 - this._title.get_width() / 2);
+		this._title.set_y(flixel_FlxG.height / 2 - this._title.get_height() / 2 - 50);
+		this._title.set_color(-65536);
+		this._title.set_antialiasing(true);
+		this._sc = new flixel_text_FlxText(0,0,0,"Score:" + this._score,12);
+		this._sc.set_x(flixel_FlxG.width / 2 - this._sc.get_width() / 2);
+		this._sc.set_y(flixel_FlxG.height / 2 - this._sc.get_height() / 2 - 20);
+		this._sc.set_color(-3856);
+		this._sc.set_antialiasing(true);
+		this._btnMenu = new flixel_ui_FlxButton(0,0,"Menu",$bind(this,this.goMenu));
+		this._btnMenu.set_x(flixel_FlxG.width / 2 - this._btnMenu.get_width() / 2);
+		this._btnMenu.set_y(this._sc.y + 30);
+		this.add(this._btnMenu);
+		this.add(this._sc);
+		this.add(this._title);
+		flixel_FlxState.prototype.create.call(this);
+	}
+	,goMenu: function() {
+		var nextState = new MenuState();
+		if(flixel_FlxG.game._state.switchTo(nextState)) {
+			flixel_FlxG.game._requestedState = nextState;
+		}
+	}
+	,__class__: GameOverState
+});
 var HxOverrides = function() { };
 $hxClasses["HxOverrides"] = HxOverrides;
 HxOverrides.__name__ = ["HxOverrides"];
@@ -5459,20 +5497,60 @@ $hxClasses["InstructionsState"] = InstructionsState;
 InstructionsState.__name__ = ["InstructionsState"];
 InstructionsState.__super__ = flixel_FlxState;
 InstructionsState.prototype = $extend(flixel_FlxState.prototype,{
-	_texto: null
-	,_texto2: null
-	,_texto3: null
-	,_texto4: null
-	,_texto5: null
-	,_texto6: null
-	,_texto7: null
-	,_texto8: null
+	_text: null
+	,_text2: null
+	,_text3: null
+	,_text4: null
+	,_text5: null
 	,_btnBack: null
+	,_life: null
 	,create: function() {
-		this._texto = new flixel_text_FlxText(0,0,0,"Instructions:",12);
-		this._texto.set_x(flixel_FlxG.width / 2 - this._texto.get_width() / 2);
-		this.add(this._texto);
+		this._text = new flixel_text_FlxText(0,0,0,"Instructions:",16);
+		this._text.set_x(flixel_FlxG.width / 2 - this._text.get_width() / 2);
+		this._text.set_y(10);
+		this._text.set_color(-15790081);
+		this._text.set_antialiasing(true);
+		this._text2 = new flixel_text_FlxText(0,0,0,"Move the ninja using the \nRight and Left arrows.",12);
+		this._text2.set_y(this._text.y + 40);
+		this._text2.set_x(flixel_FlxG.width / 2 - this._text2.get_width() / 2);
+		this._text2.set_antialiasing(true);
+		this._text2.set_alignment("center");
+		this._text3 = new flixel_text_FlxText(0,0,0,"Try to collide with the \nlowest possible value.",12);
+		this._text3.set_y(this._text2.y + 40);
+		this._text3.set_x(flixel_FlxG.width / 2 - this._text3.get_width() / 2);
+		this._text3.set_antialiasing(true);
+		this._text3.set_alignment("center");
+		this._text4 = new flixel_text_FlxText(0,0,0,"Use the mouse to pick up     \nand increase your life.",12);
+		this._text4.set_y(this._text3.y + 40);
+		this._text4.set_x(flixel_FlxG.width / 2 - this._text4.get_width() / 2);
+		this._text4.set_antialiasing(true);
+		this._text4.set_alignment("center");
+		this._text5 = new flixel_text_FlxText(0,0,0,"Press ESC to quit the game.",12);
+		this._text5.set_y(this._text4.y + 50);
+		this._text5.set_x(flixel_FlxG.width / 2 - this._text5.get_width() / 2);
+		this._text5.set_antialiasing(true);
+		this._text5.set_alignment("center");
+		this._btnBack = new flixel_ui_FlxButton(0,0,"Menu",$bind(this,this.goBack));
+		this._btnBack.set_x(flixel_FlxG.width / 2 - this._btnBack.get_width() / 2);
+		this._btnBack.set_y(flixel_FlxG.height - 30);
+		this._life = new Life();
+		this._life.velocity.set_y(0);
+		this._life.set_x(250);
+		this._life.set_y(this._text3.y + 40);
+		this.add(this._text);
+		this.add(this._text2);
+		this.add(this._text3);
+		this.add(this._text4);
+		this.add(this._text5);
+		this.add(this._btnBack);
+		this.add(this._life);
 		flixel_FlxState.prototype.create.call(this);
+	}
+	,goBack: function() {
+		var nextState = new MenuState();
+		if(flixel_FlxG.game._state.switchTo(nextState)) {
+			flixel_FlxG.game._requestedState = nextState;
+		}
 	}
 	,__class__: InstructionsState
 });
@@ -8080,31 +8158,32 @@ $hxClasses["MenuState"] = MenuState;
 MenuState.__name__ = ["MenuState"];
 MenuState.__super__ = flixel_FlxState;
 MenuState.prototype = $extend(flixel_FlxState.prototype,{
-	_titulo: null
+	_title: null
 	,_btnPlay: null
 	,_btnCredits: null
 	,_btnInstructions: null
 	,_personagem: null
 	,create: function() {
-		this._titulo = new flixel_text_FlxText(0,0,0,"Ninja ",20);
-		this._titulo.set_x(flixel_FlxG.width / 2 - this._titulo.get_width() / 2);
-		this._titulo.set_y(flixel_FlxG.height / 2 - this._titulo.get_height() / 2 - 50);
+		this._title = new flixel_text_FlxText(0,0,0,"Ninja ",20);
+		this._title.set_x(flixel_FlxG.width / 2 - this._title.get_width() / 2);
+		this._title.set_y(flixel_FlxG.height / 2 - this._title.get_height() / 2 - 50);
+		this._title.set_antialiasing(true);
 		this._btnPlay = new flixel_ui_FlxButton(0,0,"Play",$bind(this,this.goPlay));
 		this._btnPlay.set_x(flixel_FlxG.width / 2 - this._btnPlay.get_width() / 2);
-		this._btnPlay.set_y(this._titulo.y + this._titulo.get_height() + 5);
+		this._btnPlay.set_y(this._title.y + this._title.get_height() + 5);
 		this._btnPlay.setGraphicSize(150,20);
-		this._btnCredits = new flixel_ui_FlxButton(0,0,"Credits",$bind(this,this.goCredits));
-		this._btnCredits.set_x(flixel_FlxG.width / 2 - this._btnCredits.get_width() / 2);
-		this._btnCredits.set_y(this._btnPlay.y + this._btnPlay.get_height() + 5);
-		this._btnCredits.setGraphicSize(150,20);
 		this._btnInstructions = new flixel_ui_FlxButton(0,0,"Instructions",$bind(this,this.goInstructions));
 		this._btnInstructions.set_x(flixel_FlxG.width / 2 - this._btnInstructions.get_width() / 2);
-		this._btnInstructions.set_y(this._btnCredits.y + this._btnPlay.get_height() + 5);
+		this._btnInstructions.set_y(this._btnPlay.y + this._btnPlay.get_height() + 5);
 		this._btnInstructions.setGraphicSize(150,20);
-		this._personagem = new PersonagemP();
-		this._personagem.set_x(this._titulo.x + this._titulo.get_width());
-		this._personagem.set_y(flixel_FlxG.height / 2 - this._titulo.get_height() / 2 - 42);
-		this.add(this._titulo);
+		this._btnCredits = new flixel_ui_FlxButton(0,0,"Credits",$bind(this,this.goCredits));
+		this._btnCredits.set_x(flixel_FlxG.width / 2 - this._btnCredits.get_width() / 2);
+		this._btnCredits.set_y(this._btnInstructions.y + this._btnInstructions.get_height() + 5);
+		this._btnCredits.setGraphicSize(150,20);
+		this._personagem = new Personagem();
+		this._personagem.set_x(this._title.x + this._title.get_width());
+		this._personagem.set_y(flixel_FlxG.height / 2 - this._title.get_height() / 2 - 42);
+		this.add(this._title);
 		this.add(this._btnPlay);
 		this.add(this._btnCredits);
 		this.add(this._btnInstructions);
@@ -8131,7 +8210,7 @@ MenuState.prototype = $extend(flixel_FlxState.prototype,{
 	}
 	,__class__: MenuState
 });
-var Obstaculo = function(i) {
+var Obstacle = function(i) {
 	flixel_FlxSprite.call(this);
 	this.set_x(48 + i * 32);
 	this.velocity.set_y(200);
@@ -8164,10 +8243,10 @@ var Obstaculo = function(i) {
 		this.loadGraphic("assets/images/numbers-9.png",true,32,32);
 	}
 };
-$hxClasses["Obstaculo"] = Obstaculo;
-Obstaculo.__name__ = ["Obstaculo"];
-Obstaculo.__super__ = flixel_FlxSprite;
-Obstaculo.prototype = $extend(flixel_FlxSprite.prototype,{
+$hxClasses["Obstacle"] = Obstacle;
+Obstacle.__name__ = ["Obstacle"];
+Obstacle.__super__ = flixel_FlxSprite;
+Obstacle.prototype = $extend(flixel_FlxSprite.prototype,{
 	_score: null
 	,update: function(elapsed) {
 		flixel_FlxSprite.prototype.update.call(this,elapsed);
@@ -8178,9 +8257,9 @@ Obstaculo.prototype = $extend(flixel_FlxSprite.prototype,{
 	,getScore: function() {
 		return this._score;
 	}
-	,__class__: Obstaculo
+	,__class__: Obstacle
 });
-var PersonagemP = function() {
+var Personagem = function() {
 	flixel_FlxSprite.call(this);
 	this.loadGraphic("assets/images/ninja.png",true,16,16);
 	this._facingFlip.set(1,{ x : true, y : false});
@@ -8193,10 +8272,10 @@ var PersonagemP = function() {
 	this.set_x(flixel_FlxG.width / 2 - 15);
 	this.set_y(flixel_FlxG.height - 50);
 };
-$hxClasses["PersonagemP"] = PersonagemP;
-PersonagemP.__name__ = ["PersonagemP"];
-PersonagemP.__super__ = flixel_FlxSprite;
-PersonagemP.prototype = $extend(flixel_FlxSprite.prototype,{
+$hxClasses["Personagem"] = Personagem;
+Personagem.__name__ = ["Personagem"];
+Personagem.__super__ = flixel_FlxSprite;
+Personagem.prototype = $extend(flixel_FlxSprite.prototype,{
 	_score: null
 	,_life: null
 	,getScore: function() {
@@ -8209,14 +8288,18 @@ PersonagemP.prototype = $extend(flixel_FlxSprite.prototype,{
 		return this._life;
 	}
 	,setLife: function(life) {
-		this._life -= life;
+		if(this._life - life <= 0) {
+			this._life = 0;
+		} else {
+			this._life -= life;
+		}
 	}
-	,__class__: PersonagemP
+	,__class__: Personagem
 });
 var PlayState = function(MaxSize) {
 	this._obs = new flixel_group_FlxTypedGroup();
-	this._tempoL = new Date().getTime() + 15000;
-	this._tempo = new Date().getTime() + 3000;
+	this._timeL = new Date().getTime() + 15000;
+	this._time = new Date().getTime() + 3000;
 	flixel_FlxState.call(this,MaxSize);
 };
 $hxClasses["PlayState"] = PlayState;
@@ -8226,8 +8309,8 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 	_myMap: null
 	,_collideMap: null
 	,_personagem: null
-	,_tempo: null
-	,_tempoL: null
+	,_time: null
+	,_timeL: null
 	,_obs: null
 	,_score: null
 	,_life: null
@@ -8238,9 +8321,11 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 		this._collideMap = new flixel_tile_FlxTilemap();
 		this._myMap.loadMapFromCSV("assets/map.txt","assets/images/floortileset.png",16,16);
 		this._collideMap.loadMapFromCSV("assets/collideMap.txt","assets/images/floortileset.png",16,16);
-		this._personagem = new PersonagemP();
+		this._personagem = new Personagem();
 		this._score = new flixel_text_FlxText(0,0,0,"Score: " + this._personagem.getScore(),7);
+		this._score.set_antialiasing(true);
 		this._life = new flixel_text_FlxText(0,15,0,"Life: " + this._personagem.getLife(),8);
+		this._life.set_antialiasing(true);
 		this.add(this._myMap);
 		this.add(this._personagem);
 		this.add(this._life);
@@ -8249,7 +8334,13 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 	}
 	,update: function(e) {
 		flixel_FlxState.prototype.update.call(this,e);
-		var tmp = this._personagem.getLife() <= 0;
+		if(this._personagem.getLife() <= 0) {
+			var game_over = new GameOverState();
+			game_over._score = this._personagem.getScore();
+			if(flixel_FlxG.game._state.switchTo(game_over)) {
+				flixel_FlxG.game._requestedState = game_over;
+			}
+		}
 		if(flixel_FlxG.mouse._leftButton.current == 2) {
 			this._personagem.setLife(2);
 			var _cap = new flixel_FlxSprite();
@@ -8261,14 +8352,14 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 				_cap.kill();
 			}
 		}
-		if(new Date().getTime() > this._tempo) {
-			this.criaObstaculo();
-			this._tempo += 3000;
+		if(new Date().getTime() > this._time) {
+			this.createObstacle();
+			this._time += 3000;
 		}
-		if(new Date().getTime() > this._tempoL) {
+		if(new Date().getTime() > this._timeL) {
 			this.life = new Life();
 			this.add(this.life);
-			this._tempoL += 15000;
+			this._timeL += 15000;
 		}
 		var _this = flixel_FlxG.keys.pressed;
 		if(_this.keyManager.checkStatus(39,_this.status)) {
@@ -8282,6 +8373,13 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 			_g1.set_x(_g1.x - 2);
 			this._personagem.animation.play("right");
 		}
+		var _this2 = flixel_FlxG.keys.justPressed;
+		if(_this2.keyManager.checkStatus(27,_this2.status)) {
+			var nextState = new MenuState();
+			if(flixel_FlxG.game._state.switchTo(nextState)) {
+				flixel_FlxG.game._requestedState = nextState;
+			}
+		}
 		flixel_FlxG.overlap(this._personagem,this._obs,$bind(this,this.onCollide));
 		this._personagem.set_y(flixel_FlxG.height - 50);
 		flixel_FlxG.overlap(this._collideMap,this._personagem,null,flixel_FlxObject.separate);
@@ -8293,11 +8391,11 @@ PlayState.prototype = $extend(flixel_FlxState.prototype,{
 		this._score.set_text("Score: " + this._personagem.getScore());
 		this._life.set_text("Life: " + this._personagem.getLife());
 	}
-	,criaObstaculo: function() {
+	,createObstacle: function() {
 		var _g = 0;
 		while(_g < 7) {
 			var i = _g++;
-			var ob = new Obstaculo(i);
+			var ob = new Obstacle(i);
 			this._obs.add(ob);
 		}
 	}
@@ -69908,7 +70006,7 @@ var lime_utils_AssetCache = function() {
 	this.audio = new haxe_ds_StringMap();
 	this.font = new haxe_ds_StringMap();
 	this.image = new haxe_ds_StringMap();
-	this.version = 80172;
+	this.version = 300572;
 };
 $hxClasses["lime.utils.AssetCache"] = lime_utils_AssetCache;
 lime_utils_AssetCache.__name__ = ["lime","utils","AssetCache"];
